@@ -8,25 +8,31 @@
     font-size: 14px;
 }
 
-/*Fundo*/
-.principal{
-    height:80%;
-    width:100%;
-    padding: 50px 0 50px 0;
-    background-color: #fdf1e7;
+body{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
+
 
 /*Primeira Tela*/
 .matches{
-    margin-right: 50px;
-    width: 300px;
-    height: 550px;
-    border-radius: 10px;
+    width: 25%;
+    height: 100vh;
     background-color: #ffffff;
+}
+
+/*Segunda Tela*/
+.segundaTela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    background-color: #F0F2F4;
+    height: 100vh;
+
 }
 
 /*Cabeçalho da primeira Tela*/
@@ -35,22 +41,39 @@ header{
     display: flex;
     flex-direction: row;
     height: 50px;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     font-weight: bold;
     color: #ffffff;
-    border-radius: 10px;
 }
-
+ 
+/*Esquerda do cabeçalho*/
 .parte1{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #00000048;
+    background-color: #00000034;
     border-radius: 12px;
     padding: 3px 5px;
     margin-left: 5px;
     
+}
+
+/**Direita do cabeçalho*/
+.parte2{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.icone{
+    height: 30px;
+    width: 35px;
+    background-color: rgba(0, 0, 0, 0.185);
+    text-align: center;
+    border-radius: 15px;
 }
 
 .imgPerfil{
@@ -60,10 +83,7 @@ header{
     margin-right: 5px;
 }
 
-.parte2{
-    margin: 5px;
-}
-
+/*Aba da primeira tela*/
 .aba{
     display: flex;
     flex-direction: row;
@@ -82,21 +102,35 @@ h1 {
     margin: 20px;
 }
 
+/*Parte com a mensagem primeira Tela*/
 .mensagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
     margin: 10px;
-    padding: 40px 15px;
     text-align: center;
 }
 
 .imagem{
-    height: 100px;
-    width: 100px;
+    background-image: linear-gradient(to right, #ff0560,rgb(255, 81, 0));
+    height: 150px;
+    width: 90px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 
-/*Segunda Tela*/
+/*Parte com o perfil na segunda tela*/
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85%;
+}
+
+/*Tela de perfil*/
 .perfil{
     width: 300px;
     height: 550px;
@@ -105,45 +139,63 @@ h1 {
     background-image: url(./assents/imagem1.jpg);
     background-size: cover;
     background-position: center;
-    filter: blur(0.5px);
 }
 
-/*Para as informações ficarem na parte inferior da tela*/
-.container{
-    height: 65%;
+/*Para as informações ficarem na parte inferior da tela de perfil*/
+.fotos{
+    height: 60%;
 }
 
+/*Parte com as informações*/
 .informacao{
-    padding: 15px;
-    margin-bottom: px;
+    padding: 5px 15px 20px 10px;
     background-color: rgba(0, 0, 0, 0.281);
-    border-radius: 10px;
+
 }
 
 .nome{ 
     display: flex;
-    flex-direction: row;
+    justify-content:flex-start;
     align-items: center;
-    margin-bottom: 7px;
+    margin: 5px;
     color: #ffffff;
-    font-weight: bold;
+    text-align: left;
+    
 }
 h1.nome{
-    font-size: 25px;
+    font-size: 23px;
     margin-right: 5px;
+    font-weight: bold;
 }
+
 
 .verificado{
     height: 20px;
 }
 
+.online{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+}
+
+.bolinhaVerde{
+    height: 8px;
+    width: 8px;
+    background-color:  #2EF78A;
+    border-radius: 4px;
+}
+
 .curso {
     display: flex;
     text-align:left;
-    color: rgb(243, 243, 243);
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
 }
 
-/*Rodapé da segunda tela*/
+/*Rodapé da tela de perfil*/
 .footer{
     background-color: #000;
     display: flex;
@@ -151,58 +203,71 @@ h1.nome{
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 69px;
-    border-radius: 10px;
+    height: 89px;
+    border-radius: 0 0 10px 10px;
 }
 
 .icone1{
     padding: 7px;
     border-radius: 20px;
-    border: solid #fff;
+    border: 1px solid #fff;
 }
 .icone2{
     padding: 7px;
     border-radius: 20px;
-    border: solid #C62C1E;
+    border: 1px solid #C62C1E;
 }
 .icone3{
     padding: 7px;
     border-radius: 20px;
-    border: solid #30F3EF;
+    border: 1px solid #30F3EF;
 }
 .icone4{
     padding: 7px;
     border-radius: 20px;
-    border: solid #2DF187;
+    border: 1px solid #2DF187;
 }
 .icone5{
     padding: 7px;
     border-radius: 20px;
-    border: solid #BA52F5;
+    border: 1px solid #BA52F5;
 }
 
 
 /*Rodapé da página total*/
 footer{
-    height: 20%;
-    background-color: #f8f2ed;
+    width: 100%;
+    height: 15%;
+    background-color: #F0F2F4;
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    padding: 20px 0px;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .separacao{
-    width: 900px;
+    width: 85%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+.botao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p, .botao{
+    margin: 5px;
+}
+
 /*criar o símbolo de espaço*/
 .espaco{
-    padding: 8px 60px;
+    padding: 8px 40px;
     border: solid gray 4px;
     border-radius: 9px;
     margin-bottom: 5px;
@@ -210,11 +275,10 @@ footer{
 
 button{
     color: #fff;
-    width: 100px;
-    border-radius: 10px;
-    background-color: gray;
-}
-
-p, .separacao{
-    text-align: center;
+    height: 40px;
+    width: 130px;
+    border-radius: 20px;
+    background-color: #C4C8CD;
+    border: none;
+    font-weight: bold;
 }
